@@ -34,15 +34,6 @@ Gains were tuned iteratively to satisfy stability and performance requirements a
 ![PID Control Loop](docs/PID.png)
 
 
-## Building and Running
-
-```bash
-mkdir build
-cd build
-cmake ..
-make
-./CPPSim
-
 ## Simulation Scenarios and Results
 
 This project was evaluated using the official quadrotor simulator and a set of standardized scenarios provided by the Udacity FCND Controls C++ project. Each scenario tests a specific set of controller capabilities including stabilization, position/attitude control, robustness to non-idealities, and trajectory tracking. :contentReference[oaicite:1]{index=1}
