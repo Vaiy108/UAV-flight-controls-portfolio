@@ -63,8 +63,9 @@ Install dependencies:
 pip install -r requirements.txt
 
 Run a script (example):
-python scripts/03_square_maneuver.py```
-
+python scripts/03_square_maneuver.py
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------
 Ensure the Crazyradio is connected and the drone battery is sufficiently charged before running any flight script.
 
 ##Safety Notes
@@ -76,3 +77,10 @@ Conservative thrust and tilt limits are used by default
 Each script includes a clean motor stop on exit
 
 Fly only in a clear indoor space and be ready to abort if needed
+
+## Author
+**Vasan Iyer**  
+Embedded Software Development / Flight Controls Engineer  
+Focus: Flight Dynamics, Flight controls, navigation, PID control, Crazyflie drone,  Embedded Software development,  Python
+
+GitHub: https://github.com/Vaiy108
