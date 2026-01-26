@@ -10,6 +10,15 @@ This repository contains my completed implementation of the **FCND Controls C++ 
 
 This project is included here as part of a broader **UAV Flight Controls Portfolio**, which also demonstrates real-hardware experiments on a Crazyflie 2.0 quadcopter.
 
+## Control Architecture
+The quadrotor control system follows a cascaded architecture with multiple control loops operating at different levels:
+
+- **Position (X,Y,Z) control** generates desired accelerations and thrust
+- **Attitude control (roll, pitch, yaw)** converts acceleration commands into orientation setpoints
+- **Body-rate control (p,q,r)** generates motor commands
+- Inner loops run at higher rates to ensure stability and fast disturbance rejection
+
+
 
 # The C++ Project Readme #
 
