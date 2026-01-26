@@ -1,3 +1,90 @@
+## My Implementation Summary
+
+This repository contains my completed implementation of the **FCND Controls C++ project**.
+
+**What I implemented and validated:**
+- Implemented and tuned PID-based controllers for altitude, attitude, position, and trajectory tracking
+- Adjusted control gains to satisfy all provided simulation scenarios
+- Built and tested the project locally using CMake on Windows 10 using Visual Studio
+- Verified controller behavior through multiple flight scenarios (hover, position hold, trajectory follow)
+
+This project is included here as part of a broader **UAV Flight Controls Portfolio**, which also demonstrates real-hardware experiments on a Crazyflie 2.0 quadcopter.
+
+
+## Control Architecture
+The quadrotor control system follows a cascaded architecture with multiple control loops operating at different levels:
+
+- **Position (X,Y,Z) control** generates desired accelerations and thrust
+- **Attitude control (roll, pitch, yaw)** converts acceleration commands into orientation setpoints
+- **Body-rate control (p,q,r)** generates motor commands
+- Inner loops run at higher rates to ensure stability and fast disturbance rejection
+
+![3D Quadrotor Control Architecture](docs/control_architecture.png)
+
+
+## PID Control Design
+Each control loop uses a PID controller:
+
+- **Proportional (P):** primary response to error
+- **Integral (I):** compensates steady-state errors
+- **Derivative (D):** improves damping and transient response
+
+Gains were tuned iteratively to satisfy stability and performance requirements across all scenarios.
+
+![PID Control Loop](docs/PID.png)
+
+
+## Simulation Scenarios and Results
+
+This project was evaluated using the official quadrotor simulator and a set of standardized scenarios provided by the Udacity FCND Controls C++ project. Each scenario tests a specific set of controller capabilities including stabilization, position/attitude control, robustness to non-idealities, and trajectory tracking. :contentReference[oaicite:1]{index=1}
+
+### Scenario 1 – Intro / Initial Setup
+### What it tests : Vehicle initialization and hover behavior
+In this scenario the quadrotor starts above the origin with default parameters and falls due to gravity. The goal of this stage is to initialize the controller and tune the vehicle mass and basic thrust distribution so that the system does not simply fall. This step ensures that the baseline controller produces hover when expected.
+
+▶️ [Watch video](media/scenario1_hover.mp4)
+
+---
+
+### Scenario 2 – Body Rate & Attitude Stabilization
+### What it tests : Stabilization of angular rates and attitude 
+This scenario requires implementation of body rate control and roll/pitch control. The vehicle begins with an initial rotation and the controller must stabilize the quadrotor’s attitude. Success is measured by rejecting rotation and leveling the vehicle in a timely manner. 
+
+▶️ [Watch video](media/scenario2_attitude.mp4)
+
+---
+
+### Scenario 3 – Position, Velocity & Yaw Control
+### What it tests : Outer loops controlling position and yaw
+Once the attitude is stable, this stage tests position and velocity control as well as yaw control. This scenario spawns two quads with different initial conditions and command setpoints; the controller must bring both to their targets and align yaw appropriately. 
+
+▶️ [Watch video](media/scenario3_position.mp4)
+
+---
+
+### Scenario 4 – Non-idealities & Robustness
+### What it tests : Robustness (multiple vehicles with differing dynamics)
+This scenario contains multiple vehicles with different mass and center-of-mass configurations. The controller must robustly handle these non-idealities using the same tuned gains so that all vehicles reach their targets with similar performance.
+
+▶️ [Watch video](media/scenario4_non-idealities.mp4)
+
+## Building and Running
+
+The project was built and tested locally using CMake.
+
+Typical build steps:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+After building, the controller is run together with the provided quadrotor simulator to evaluate performance across the required scenarios.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
 # The C++ Project Readme #
 
 This is the readme for the C++ project.
