@@ -44,6 +44,8 @@ In this scenario the quadrotor starts above the origin with default parameters a
 
 ▶️ [Watch video](media/scenario1_hover.mp4)
 
+![Scenario 1](media/scenario1_hover.gif)
+
 ---
 
 ### Scenario 2 – Body Rate & Attitude Stabilization
@@ -51,6 +53,8 @@ In this scenario the quadrotor starts above the origin with default parameters a
 This scenario requires implementation of body rate control and roll/pitch control. The vehicle begins with an initial rotation and the controller must stabilize the quadrotor’s attitude. Success is measured by rejecting rotation and leveling the vehicle in a timely manner. 
 
 ▶️ [Watch video](media/scenario2_attitude.mp4)
+
+![Scenario 2](media/scenario2_attitude.gif)
 
 ---
 
@@ -60,6 +64,8 @@ Once the attitude is stable, this stage tests position and velocity control as w
 
 ▶️ [Watch video](media/scenario3_position.mp4)
 
+![Scenario 3](media/scenario3_position.gif)
+
 ---
 
 ### Scenario 4 – Non-idealities & Robustness
@@ -67,6 +73,8 @@ Once the attitude is stable, this stage tests position and velocity control as w
 This scenario contains multiple vehicles with different mass and center-of-mass configurations. The controller must robustly handle these non-idealities using the same tuned gains so that all vehicles reach their targets with similar performance.
 
 ▶️ [Watch video](media/scenario4_non-idealities.mp4)
+
+![Scenario 4](media/scenario4_non-idealities.gif)
 
 ## Building and Running
 
