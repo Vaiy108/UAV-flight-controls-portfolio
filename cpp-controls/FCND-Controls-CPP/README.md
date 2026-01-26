@@ -21,6 +21,16 @@ The quadrotor control system follows a cascaded architecture with multiple contr
 ![3D Quadrotor Control Architecture](docs/control_architecture.png)
 
 
+## PID Control Design
+Each control loop uses a PID controller:
+
+- **Proportional (P):** primary response to error
+- **Integral (I):** compensates steady-state errors
+- **Derivative (D):** improves damping and transient response
+
+Gains were tuned iteratively to satisfy stability and performance requirements across all scenarios.
+
+![PID Control Loop](docs/PID.png)
 
 
 
