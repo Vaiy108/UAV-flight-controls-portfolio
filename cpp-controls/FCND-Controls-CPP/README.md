@@ -32,6 +32,35 @@ Gains were tuned iteratively to satisfy stability and performance requirements a
 
 ![PID Control Loop](docs/PID.png)
 
+## Simulation Scenarios and Results
+
+This project was evaluated using the official quadrotor simulator and a set of standardized scenarios provided by the Udacity FCND Controls C++ project. Each scenario tests a specific set of controller capabilities including stabilization, position/attitude control, robustness to non-idealities, and trajectory tracking. :contentReference[oaicite:1]{index=1}
+
+### Scenario 1 – Intro / Initial Setup
+In this scenario the quadrotor starts above the origin with default parameters and falls due to gravity. The goal of this stage is to initialize the controller and tune the vehicle mass and basic thrust distribution so that the system does not simply fall. This step ensures that the baseline controller produces hover when expected. :contentReference[oaicite:2]{index=2}
+
+▶️ [Watch video](media/scenario1_hover.mp4)
+
+---
+
+### Scenario 2 – Body Rate & Attitude Stabilization
+This scenario requires implementation of body rate control and roll/pitch control. The vehicle begins with an initial rotation and the controller must stabilize the quadrotor’s attitude. Success is measured by rejecting rotation and leveling the vehicle in a timely manner. :contentReference[oaicite:3]{index=3}
+
+▶️ [Watch video](media/scenario2_attitude.mp4)
+
+---
+
+### Scenario 3 – Position, Velocity & Yaw Control
+Once the attitude is stable, this stage tests position and velocity control as well as yaw control. This scenario spawns two quads with different initial conditions and command setpoints; the controller must bring both to their targets and align yaw appropriately. :contentReference[oaicite:4]{index=4}
+
+▶️ [Watch video](media/scenario3_position.mp4)
+
+---
+
+### Scenario 4 – Non-idealities & Robustness
+This scenario contains multiple vehicles with different mass and center-of-mass configurations. The controller must robustly handle these non-idealities using the same tuned gains so that all vehicles reach their targets with similar performance. :contentReference[oaicite:5]{index=5}
+
+▶️ [Watch video](media/scenario4_non-idealities.mp4)
 
 
 # The C++ Project Readme #
