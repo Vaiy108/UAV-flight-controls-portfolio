@@ -91,6 +91,13 @@ make
 
 After building, the controller is run together with the provided quadrotor simulator to evaluate performance across the required scenarios.
 
+## Author
+**Vasan Iyer**  
+Embedded Software Development / Flight Controls Engineer  
+Focus: Flight Dynamics, Flight controls, navigation, PID control, UAV systems,  Embedded Software development, C++, Python,  sensor fusion, simulation-based verification.
+
+GitHub: https://github.com/Vaiy108
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 # The C++ Project Readme #
