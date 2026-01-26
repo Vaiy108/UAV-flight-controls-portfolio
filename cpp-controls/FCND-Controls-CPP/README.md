@@ -18,7 +18,8 @@ The quadrotor control system follows a cascaded architecture with multiple contr
 - **Body-rate control (p,q,r)** generates motor commands
 - Inner loops run at higher rates to ensure stability and fast disturbance rejection
 
-![3D Quadrotor Control Architecture](docs/3D_Control Architecture.PNG)
+![3D Quadrotor Control Architecture](docs/control_architecture.png)
+
 
 
 
