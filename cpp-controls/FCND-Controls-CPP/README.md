@@ -1,3 +1,16 @@
+## My Implementation Summary
+
+This repository contains my completed implementation of the **FCND Controls C++ project**.
+
+**What I implemented and validated:**
+- Implemented and tuned PID-based controllers for altitude, attitude, position, and trajectory tracking
+- Adjusted control gains to satisfy all provided simulation scenarios
+- Built and tested the project locally using CMake on Windows 10 using Visual Studio
+- Verified controller behavior through multiple flight scenarios (hover, position hold, trajectory follow)
+
+This project is included here as part of a broader **UAV Flight Controls Portfolio**, which also demonstrates real-hardware experiments on a Crazyflie 2.0 quadcopter.
+
+
 # The C++ Project Readme #
 
 This is the readme for the C++ project.
