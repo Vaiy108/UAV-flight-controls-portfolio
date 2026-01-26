@@ -49,8 +49,8 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 
-## Run a script (example):
-python scripts/03_square_maneuver.py
+Run a script (example):
+python scripts/03_square_maneuver.py```
 
 Ensure the Crazyradio is connected and the drone battery is sufficiently charged before running any flight script.
 
