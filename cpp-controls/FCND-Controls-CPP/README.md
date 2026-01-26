@@ -81,7 +81,7 @@ cmake ..
 make
 ```
 
-
+After building, the controller is run together with the provided quadrotor simulator to evaluate performance across the required scenarios.
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
