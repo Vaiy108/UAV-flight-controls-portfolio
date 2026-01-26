@@ -18,7 +18,15 @@ The focus is on **real hardware interaction**, safe setpoint control, and basic 
 
 All experiments were performed indoors with conservative thrust and tilt limits.
 
----
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Crazyflie Assembly
+A short video overview of the drone assembly from the ground-up.
+
+![Crazyflie Assembly](docs/crazyflie_assembly.gif)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Scripts Overview
 
