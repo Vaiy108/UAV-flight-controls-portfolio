@@ -68,7 +68,22 @@ This scenario contains multiple vehicles with different mass and center-of-mass 
 
 ▶️ [Watch video](media/scenario4_non-idealities.mp4)
 
+## Building and Running
 
+The project was built and tested locally using CMake.
+
+Typical build steps:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 # The C++ Project Readme #
 
