@@ -16,3 +16,10 @@ This repository is a curated portfolio demonstrating:
 ## Tech Stack
 C++, CMake, Python, Crazyflie, Crazyradio
 
+## Author
+**Vasan Iyer**  
+Embedded Software Development / Flight Controls Engineer  
+Focus: Flight Dynamics, Flight controls, navigation, PID control, UAV systems,  Embedded Software development, C++, Python,  sensor fusion, simulation-based verification.
+
+GitHub: https://github.com/Vaiy108
+
