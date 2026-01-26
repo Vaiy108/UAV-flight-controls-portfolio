@@ -10,6 +10,7 @@ This repository contains my completed implementation of the **FCND Controls C++ 
 
 This project is included here as part of a broader **UAV Flight Controls Portfolio**, which also demonstrates real-hardware experiments on a Crazyflie 2.0 quadcopter.
 
+
 ## Control Architecture
 The quadrotor control system follows a cascaded architecture with multiple control loops operating at different levels:
 
@@ -31,6 +32,16 @@ Each control loop uses a PID controller:
 Gains were tuned iteratively to satisfy stability and performance requirements across all scenarios.
 
 ![PID Control Loop](docs/PID.png)
+
+
+## Building and Running
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+./CPPSim
 
 ## Simulation Scenarios and Results
 
