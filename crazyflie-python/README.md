@@ -27,7 +27,12 @@ A short video overview of the drone assembly from the ground-up.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Crazyflie Power-ON Self-test
+All the propellers will spin in sequence during the power-on self-test to check the motor connections. 
 
+![Crazyflie Assembly](docs/crazyflie_postest.gif)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
 ## Scripts Overview
 
 ### 01_connect_info.py
