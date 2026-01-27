@@ -8,9 +8,6 @@ This repository is a curated portfolio demonstrating:
 </p>
  
 - **Real UAV hardware integration** using **Crazyflie 2.0 + Crazyradio** (Python scripts, telemetry, maneuvers)
-<p align="center">
-<img src="docs/crazyflie_postest.gif" width="300"/>
-</p>
 
 ## Repository Structure
 - `cpp-controls/` — C++ control project (simulation/controller implementation)
