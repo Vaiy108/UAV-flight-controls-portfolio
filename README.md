@@ -2,7 +2,15 @@
 
 This repository is a curated portfolio demonstrating:
 - **PID-based flight control** implementation in **C++** (Udacity FCND Controls project)
+ 
+<p align="center">
+<img src="docs/scenario2_attitude.gif" width="300"/>
+</p>
+ 
 - **Real UAV hardware integration** using **Crazyflie 2.0 + Crazyradio** (Python scripts, telemetry, maneuvers)
+<p align="center">
+<img src="docs/crazyflie_postest.gif" width="300"/>
+</p>
 
 ## Repository Structure
 - `cpp-controls/` — C++ control project (simulation/controller implementation)
