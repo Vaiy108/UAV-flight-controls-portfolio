@@ -23,14 +23,23 @@ All experiments were performed indoors with conservative thrust and tilt limits.
 ## Crazyflie Assembly
 A short video overview of the drone assembly from the ground-up.
 
-![Crazyflie Assembly](docs/crazyflie_assembly.gif)
+<p align="center">
+<img src="docs/crazyflie_assembly.gif" width="500"/>
+</p>
+
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Crazyflie Power-ON Self-test
-All the propellers will spin in sequence during the power-on self-test to check the motor connections. 
+All the propellers will spin in sequence during the power-on self-test to check the motor connections.
 
-![Crazyflie Assembly](docs/crazyflie_postest.gif)
+<p align="center">
+<img src="docs/crazyflie_postest.gif" width="500"/>
+</p>
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 ## Scripts Overview
