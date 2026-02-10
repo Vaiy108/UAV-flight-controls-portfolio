@@ -9,8 +9,9 @@ MANUAL → ARMING → TAKEOFF → WAYPOINT → LANDING → DISARMING → MANUAL
 - Lands and disarms automatically
 
 ## Demo
+autonomy/square_mission/demo_uav.gif
 <p align="center">
-<img src= "autonomy/square_mission/demo_uav.gif" width="350"/>
+<img src= "autonomy/square_mission/demo_uav.gif" width="150"/>
 </p>
 
 
