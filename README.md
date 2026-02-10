@@ -11,7 +11,7 @@ This repository is a curated portfolio demonstrating:
 - **Real UAV hardware integration** using **Crazyflie 2.0 + Crazyradio** (Python scripts, telemetry, maneuvers)
 
 <p align="center">
-<img src="docs/crazyflie.jpg" width="350"/> + <img src="docs/crazyflie_postest.gif" width="350"/> 
+<img src="docs/crazyflie.jpg" width="350"/> + <img src="docs/crazyflie_demo.gif" width="350"/> 
 </p>
 
 ## Autonomy
