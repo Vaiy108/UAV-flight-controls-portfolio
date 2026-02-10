@@ -25,8 +25,8 @@ This repository is a curated portfolio demonstrating:
 - `docs/` — short technical notes, results, and setup
 
 ## Quick Status
-- FCND-Controls-CPP: completed locally ✅ (will be added/linked)
-- Crazyflie 2.0: assembled + connected via Crazyradio; basic maneuvers completed ✅ (scripts/logs to be added)
+- FCND-Controls-CPP: completed locally ✅
+- Crazyflie 2.0: assembled + connected via Crazyradio; basic maneuvers completed ✅
 
 ## Tech Stack
 C++, CMake, Python, Crazyflie, Crazyradio
