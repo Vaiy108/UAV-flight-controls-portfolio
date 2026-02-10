@@ -9,7 +9,10 @@ MANUAL → ARMING → TAKEOFF → WAYPOINT → LANDING → DISARMING → MANUAL
 - Lands and disarms automatically
 
 ## Demo
-![Square mission demo](demo_uav.gif)
+<p align="center">
+<img src="autonomy/square_mission/demo_uav.gif" width="350"/>
+</p>
+
 
 ## How to run
 ```bash
