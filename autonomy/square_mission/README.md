@@ -26,7 +26,7 @@ MANUAL → ARMING → TAKEOFF → WAYPOINT → LANDING → DISARMING → MANUAL
 
 ## Demo
 <p align="center">
-<img src= "demo_uav.gif" width="350"/>
+<img src= "demo_uav.gif" width="400"/>
 </p>
 
 
