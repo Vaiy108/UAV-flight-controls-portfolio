@@ -17,6 +17,10 @@ This repository is a curated portfolio demonstrating:
 ## Autonomy
 - **Autonomous Square Waypoint Mission** — state-machine mission (takeoff → waypoints → landing) with simulator demo  
   `autonomy/square_mission/`
+  
+<p align="center">
+<img src="docs/demo_uav.gif" width="350"/>
+</p>
 
 ## Repository Structure
 - `cpp-controls/` — C++ control project (simulation/controller implementation)
