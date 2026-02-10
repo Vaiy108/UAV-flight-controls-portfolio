@@ -31,6 +31,7 @@ This repository is a curated portfolio demonstrating:
 ## Quick Status
 - FCND-Controls-CPP: completed locally ✅
 - Crazyflie 2.0: assembled + connected via Crazyradio; basic maneuvers completed ✅
+- Autonomy: implemented a waypoint navigation mission - the drone autonomously arms, takes off, flies a square trajectory, lands, and disarms ✅
 
 ## Tech Stack
 C++, CMake, Python, Crazyflie, Crazyradio
