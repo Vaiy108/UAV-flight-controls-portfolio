@@ -14,4 +14,19 @@ MANUAL → ARMING → TAKEOFF → WAYPOINT → LANDING → DISARMING → MANUAL
 ## How to run
 ```bash
 python square_waypoint_mission.py --host 127.0.0.1 --port 5760
+```
+## Key implementation details
 
+- Event-driven callbacks (LOCAL_POSITION, LOCAL_VELOCITY, STATE)
+
+- Waypoint arrival detection using XY distance threshold
+
+- Waypoints generated relative to current local position
+
+## Future improvements
+
+- smoother cornering / trajectory tracking
+
+- yaw control at each waypoint
+
+- more robust “arrival” logic using velocity + position
