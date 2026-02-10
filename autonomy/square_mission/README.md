@@ -10,7 +10,7 @@ MANUAL → ARMING → TAKEOFF → WAYPOINT → LANDING → DISARMING → MANUAL
 
 ## Demo
 <p align="center">
-<img src="autonomy/square_mission/demo_uav.gif" width="350"/>
+<img src= "autonomy/square_mission/demo_uav.gif" width="350"/>
 </p>
 
 
