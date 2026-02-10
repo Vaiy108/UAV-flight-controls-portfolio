@@ -13,6 +13,10 @@ This repository is a curated portfolio demonstrating:
 <img src="docs/crazyflie.jpg" width="350"/>
 </p>
 
+## Autonomy
+- **Autonomous Square Waypoint Mission** — state-machine mission (takeoff → waypoints → landing) with simulator demo  
+  `autonomy/square_mission/`
+
 ## Repository Structure
 - `cpp-controls/` — C++ control project (simulation/controller implementation)
 - `crazyflie-python/` — Crazyflie 2.0 hardware work (scripts + logs)
