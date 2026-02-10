@@ -1,5 +1,21 @@
 # Autonomous Square Waypoint Mission
 
+## Overview
+This project implements a waypoint navigation mission using the Udacity drone API.
+The drone autonomously arms, takes off, flies a square trajectory, lands, and disarms.
+
+## Skills Demonstrated
+
+- Finite state machine design
+
+- MAVLink / simulator integration
+
+- Local NED coordinate control
+
+- Event-driven callbacks
+
+- Autonomous mission sequencing
+
 This project implements an autonomous mission using a finite state machine:
 MANUAL → ARMING → TAKEOFF → WAYPOINT → LANDING → DISARMING → MANUAL
 
