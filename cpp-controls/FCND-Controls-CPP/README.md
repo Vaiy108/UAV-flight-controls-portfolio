@@ -162,11 +162,11 @@ Both quadrotors converged to their target positions. The yaw-controlled quad ali
 ### What it tests : Robustness (multiple vehicles with differing dynamics)
 This scenario contains multiple vehicles with different mass and center-of-mass configurations. The controller must robustly handle these non-idealities using the same tuned gains so that all vehicles reach their targets with similar performance.
 
-Objective
+### Objective
 Ensure the controller works under non-ideal conditions:
 1. Shifted center of mass
 2. Increased vehicle mass
-Implementation
+### Implementation
 Integral Altitude Control
 Added integral action in altitude control to compensate for steady-state errors due to mass mismatch.
 Code:
