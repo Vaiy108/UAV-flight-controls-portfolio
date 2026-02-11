@@ -44,7 +44,8 @@ In this scenario the quadrotor starts above the origin with default parameters a
 
 ### Objective:
 Verify that the quadrotor can remain stable and hover without diverging.
-Implementation:
+
+### Implementation:
 No new controller logic was required for this scenario. This scenario was used to confirm:
 1. Correct motor mixing
 2. Proper thrust direction
@@ -67,7 +68,7 @@ The quad remained stable and did not diverge, confirming the correctness of the 
 This scenario requires implementation of body rate control and roll/pitch control. The vehicle begins with an initial rotation and the controller must stabilize the quadrotor’s attitude. Success is measured by rejecting rotation and leveling the vehicle in a timely manner. 
 ### Objective
 Stabilize angular rates and bring the vehicle back to level attitude when initialized with a nonzero roll rate.
-Implementation
+### Implementation
 ### Body Rate Control
 Implemented a proportional body-rate controller that computes desired moments from rate error and moments of inertia.
 Code:
