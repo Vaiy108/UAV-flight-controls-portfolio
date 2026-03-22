@@ -10,6 +10,33 @@ This repository contains my completed implementation of the **FCND Controls C++ 
 
 This project is included here as part of a broader **UAV Flight Controls Portfolio**, which also demonstrates real-hardware experiments on a Crazyflie 2.0 quadcopter.
 
+## What I implemented and why
+
+This controller is organized as a cascade:
+
+1. **Trajectory tracking**
+   - The simulator provides desired position, velocity, acceleration, and yaw.
+
+2. **Outer loops**
+   - `AltitudeControl()` computes collective thrust from vertical position/velocity error plus feed-forward acceleration.
+   - `LateralPositionControl()` computes desired XY acceleration from position and velocity error.
+
+3. **Attitude / rate loops**
+   - `RollPitchControl()` converts desired lateral acceleration into body-rate commands by aligning the thrust vector.
+   - `YawControl()` computes the desired yaw rate using wrapped yaw error.
+   - `BodyRateControl()` converts desired body rates into moments using the vehicle inertia.
+
+4. **Motor mixing**
+   - `GenerateMotorCommands()` maps collective thrust and body moments into four rotor thrust commands.
+
+I used saturation at each layer to keep commands physically achievable and improve robustness across all test scenarios.
+
+## Design choices I made
+
+- Used **integral control only in altitude** to remove steady-state vertical bias.
+- Saturated **XY velocity before acceleration** so the cascade stays well behaved.
+- Limited commanded tilt using `sin(maxTiltAngle)` because lateral acceleration is applied through the body-z direction.
+- Wrapped yaw error to `[-pi, pi]` so the vehicle always takes the shortest rotation.
 
 ## Control Architecture
 The quadrotor control system follows a cascaded architecture with multiple control loops operating at different levels:
