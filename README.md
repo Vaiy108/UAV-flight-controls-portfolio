@@ -2,7 +2,7 @@
 
 This repository is a curated portfolio demonstrating:
 ## Controls
-- **PID-based flight control** implementation in **C++** (Udacity FCND Controls project)
+- **PID-based flight control** implementation in **C++**
  
 <p align="center">
 <img src="docs/scenario2_attitude.gif" width="350"/>
