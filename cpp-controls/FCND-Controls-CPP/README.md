@@ -38,6 +38,18 @@ I used saturation at each layer to keep commands physically achievable and impro
 - Limited commanded tilt using `sin(maxTiltAngle)` because lateral acceleration is applied through the body-z direction.
 - Wrapped yaw error to `[-pi, pi]` so the vehicle always takes the shortest rotation.
 
+## Performance summary
+
+| Area | Result | Notes |
+|---|---|---|
+| Motor mixing | ✅ Correct | Produces expected thrust/moment response |
+| Body-rate control | ✅ Stable | Fast convergence without oscillation |
+| Roll/Pitch control | ✅ Bounded | Respects tilt limits (`maxTiltAngle`) |
+| Altitude control | ✅ Accurate | Integral term removes steady-state error |
+| Lateral control | ✅ Stable | Velocity & acceleration saturation improves robustness |
+| Yaw control | ✅ Smooth | Wrapped error avoids long rotations |
+| Full system | ✅ Passed | Single gain set works across all scenarios |
+
 ## Control Architecture
 The quadrotor control system follows a cascaded architecture with multiple control loops operating at different levels:
 
